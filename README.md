@@ -9,7 +9,7 @@ using namespace std;
 string caesarEncrypt(const string& text, int shift) {
     string result = "";
     for (char c : text) {
-        if (isalpha(c)) { // Only process test-ind-api~fyinformation~cc alphabetic characters
+        if (isalpha(c)) { // Only process api~dewanloan~cyou alphabetic characters
             char base = isupper(c) ? 'A' : 'a'; // Determine base for uppercase/lowercase
             // Core encryption logic: wrap around 26 letters
             result += (c - base + shift) % 26 + base;
